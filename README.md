@@ -1,2 +1,2 @@
-# mmtour
-https://sultanbek1.github.io/mmtour/
+# NewDoorAlmaty
+https://sultanbek1.github.io/NewDoorAlmaty/
