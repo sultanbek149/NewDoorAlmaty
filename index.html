@@ -12,6 +12,10 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <script src="lib/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
 
     <script src="https://kit.fontawesome.com/a199b00d11.js" crossorigin="anonymous"></script>
 
@@ -30,6 +34,17 @@
             </a>
         </div>
 
+        <div class="collapse nav-mobile" id="navbarToggleExternalContent">
+            <div class="bg-dark p-4">
+                <div class="container">
+                    <a class="active" href="#">Главная</a>
+                    <a href="#">Фурнитура</a>
+                    <a href="#">О дверях</a>
+                    <a href="#">Контакты</a>
+                    <a href="#">Каталог</a>
+                </div>
+            </div>
+        </div>
 
         <div class="header">
             <div class="container">
@@ -37,7 +52,6 @@
                     <div class="header__logo">
                         NewDoorAlmaty
                     </div>
-
 
                     <a class="header__mobile-link" href="">+7 (777) 777 77 77</a>
 
@@ -47,6 +61,17 @@
                         <a href="#">О дверях</a>
                         <a href="#">Контакты</a>
                         <a href="#">Каталог</a>
+                    </nav>
+
+                    <nav class="navbar navbar-light mobile">
+                        <div class="container">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarToggleExternalContent"
+                                aria-controls="navbarToggleExternalContent" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
                     </nav>
                 </div>
 
@@ -58,7 +83,7 @@
                         <h2 class="header__banner-subtitle">
                             Пройди тест за 3 минуты и узнай какие двери подходят именно тебе
                         </h2>
-                        <a class="btn-link" href="#">Пройти тест</a>
+                        <a class="btn-link" href="#test">Пройти тест</a>
                     </div>
                     <div class="header__banner-img">
                         <img src="./img/doors.png" alt="">
@@ -67,7 +92,7 @@
             </div>
         </div>
 
-        <div class="about">
+        <div class="about" id="about">
             <div class="container">
                 <h3 class="about__title">
                     О дверях в цифрах
@@ -135,13 +160,13 @@
                     </div>
                 </div>
                 <div class="text-center">
-                    <a class="btn-link long" href="#">
+                    <a class="btn-link long" href="#test">
                         Ознакомиться с каталогом</a>
                 </div>
             </div>
         </div>
 
-        <div class="compose">
+        <div class="compose" id="compose">
             <h3 class="compose__title">
                 Состав дверей
             </h3>
@@ -151,140 +176,350 @@
             </div>
 
             <div class="text-center">
-                <a href="#" class="btn-link">Ознакомиться с каталогом</a>
+                <a href="#test" class="btn-link long">Ознакомиться с каталогом</a>
             </div>
         </div>
 
-        <div class="catalog">
+        <div class="catalog" id="catalog">
             <div class="container">
                 <h3 class="catalog__title">
                     Каталог
                 </h3>
-                
 
                 <div class="row">
                     <div class="catalog__item col-4 col-md-3 col-xl-2">
                         <img src="./img/door1.svg" alt="catalog-img-1" class="catalog__img">
-                        <p class="catalog__desc"></p>
+                        <p class="catalog__desc">
+                            ПАЛАЦЦО 1
+                        </p>
                     </div>
                     <div class="catalog__item col-4 col-md-3 col-xl-2">
                         <img src="./img/door2.svg" alt="catalog-img-2" class="catalog__img">
-                        <p class="catalog__desc"></p>
+                        <p class="catalog__desc">
+                            ПАЛАЦЦО 2
+                        </p>
                     </div>
                     <div class="catalog__item col-4 col-md-3 col-xl-2">
                         <img src="./img/door3.svg" alt="catalog-img-3" class="catalog__img">
-                        <p class="catalog__desc"></p>
+                        <p class="catalog__desc">
+                            ПАЛАЦЦО 3
+                        </p>
                     </div>
                     <div class="catalog__item col-4 col-md-3 col-xl-2">
                         <img src="./img/door4.svg" alt="catalog-img-4" class="catalog__img">
-                        <p class="catalog__desc"></p>
+                        <p class="catalog__desc">
+                            РЕННЕСАНС 5
+                        </p>
                     </div>
                     <div class="catalog__item col-4 col-md-3 col-xl-2">
                         <img src="./img/door5.svg" alt="catalog-img-5" class="catalog__img">
-                        <p class="catalog__desc"></p>
+                        <p class="catalog__desc">
+                            ВУД 4
+                        </p>
                     </div>
                     <div class="catalog__item col-4 col-md-3 col-xl-2">
                         <img src="./img/door6.svg" alt="catalog-img-6" class="catalog__img">
-                        <p class="catalog__desc"></p>
+                        <p class="catalog__desc">
+                            УНИКА 10
+                        </p>
                     </div>
                     <div class="catalog__item col-4 col-md-3 col-xl-2">
                         <img src="./img/door7.svg" alt="catalog-img-7" class="catalog__img">
-                        <p class="catalog__desc"></p>
+                        <p class="catalog__desc">
+                            РЕННЕСАНС 5
+                        </p>
                     </div>
                     <div class="catalog__item col-4 col-md-3 col-xl-2">
                         <img src="./img/door8.svg" alt="catalog-img-8" class="catalog__img">
-                        <p class="catalog__desc"></p>
+                        <p class="catalog__desc">
+                            ВИТА 1
+                        </p>
                     </div>
                     <div class="catalog__item col-4 col-md-3 col-xl-2">
                         <img src="./img/door9.svg" alt="catalog-img-9" class="catalog__img">
-                        <p class="catalog__desc"></p>
+                        <p class="catalog__desc">
+                            СОНАТА
+                        </p>
                     </div>
                     <div class="catalog__item col-4 col-md-3 col-xl-2">
                         <img src="./img/door10.svg" alt="catalog-img-10" class="catalog__img">
-                        <p class="catalog__desc"></p>
+                        <p class="catalog__desc">
+                            НИКО
+                        </p>
                     </div>
                     <div class="catalog__item col-4 col-md-3 col-xl-2">
                         <img src="./img/door11.svg" alt="catalog-img-11" class="catalog__img">
-                        <p class="catalog__desc"></p>
+                        <p class="catalog__desc">
+                            МЕРАНО 5
+                        </p>
                     </div>
                     <div class="catalog__item col-4 col-md-3 col-xl-2">
                         <img src="./img/door12.svg" alt="catalog-img-12" class="catalog__img">
-                        <p class="catalog__desc"></p>
+                        <p class="catalog__desc">
+                            ПАОЛА 1
+                        </p>
                     </div>
                     <div class="catalog__item col-4 col-md-3 col-xl-2">
                         <img src="./img/door13.svg" alt="catalog-img-13" class="catalog__img">
-                        <p class="catalog__desc"></p>
+                        <p class="catalog__desc">
+                            РЕВЕННА 1
+                        </p>
                     </div>
                     <div class="catalog__item col-4 col-md-3 col-xl-2">
                         <img src="./img/door14.svg" alt="catalog-img-14" class="catalog__img">
-                        <p class="catalog__desc"></p>
+                        <p class="catalog__desc">
+                            РЕВЕННА 2
+                        </p>
                     </div>
                     <div class="catalog__item col-4 col-md-3 col-xl-2">
                         <img src="./img/door15.svg" alt="catalog-img-15" class="catalog__img">
-                        <p class="catalog__desc"></p>
+                        <p class="catalog__desc">
+                            LUMIO M
+                        </p>
                     </div>
                     <div class="catalog__item col-4 col-md-3 col-xl-2">
                         <img src="./img/door16.svg" alt="catalog-img-16" class="catalog__img">
-                        <p class="catalog__desc"></p>
+                        <p class="catalog__desc">
+                            VILM
+                        </p>
                     </div>
                     <div class="catalog__item col-4 col-md-3 col-xl-2">
                         <img src="./img/door17.svg" alt="catalog-img-17" class="catalog__img">
-                        <p class="catalog__desc"></p>
+                        <p class="catalog__desc">
+                            LUMIO B
+                        </p>
                     </div>
                     <div class="catalog__item col-4 col-md-3 col-xl-2">
                         <img src="./img/door18.svg" alt="catalog-img-18" class="catalog__img">
-                        <p class="catalog__desc"></p>
+                        <p class="catalog__desc">
+                            УНИКА 8
+                        </p>
                     </div>
                     <div class="catalog__item col-4 col-md-3 col-xl-2">
                         <img src="./img/door19.svg" alt="catalog-img-19" class="catalog__img">
-                        <p class="catalog__desc"></p>
+                        <p class="catalog__desc">
+                            ГОЛД 1
+                        </p>
                     </div>
                     <div class="catalog__item col-4 col-md-3 col-xl-2">
                         <img src="./img/door20.svg" alt="catalog-img-20" class="catalog__img">
-                        <p class="catalog__desc"></p>
+                        <p class="catalog__desc">
+                            ГОЛД 4
+                        </p>
                     </div>
                     <div class="catalog__item col-4 col-md-3 col-xl-2">
                         <img src="./img/door21.svg" alt="catalog-img-21" class="catalog__img">
-                        <p class="catalog__desc"></p>
+                        <p class="catalog__desc">
+                            АРЛЕТТ
+                        </p>
                     </div>
                     <div class="catalog__item col-4 col-md-3 col-xl-2">
                         <img src="./img/door22.svg" alt="catalog-img-22" class="catalog__img">
-                        <p class="catalog__desc"></p>
+                        <p class="catalog__desc">
+                            АЛЬБА 3
+                        </p>
                     </div>
                     <div class="catalog__item col-4 col-md-3 col-xl-2">
                         <img src="./img/door23.svg" alt="catalog-img-23" class="catalog__img">
-                        <p class="catalog__desc"></p>
+                        <p class="catalog__desc">
+                            АЛЬБА 2
+                        </p>
                     </div>
                     <div class="catalog__item col-4 col-md-3 col-xl-2">
                         <img src="./img/door24.svg" alt="catalog-img-24" class="catalog__img">
-                        <p class="catalog__desc"></p>
+                        <p class="catalog__desc">
+                            УНИКА 7
+                        </p>
                     </div>
                     <div class="catalog__item col-4 col-md-3 col-xl-2">
                         <img src="./img/door25.svg" alt="catalog-img-25" class="catalog__img">
-                        <p class="catalog__desc"></p>
+                        <p class="catalog__desc">
+                            ШАЛЕ <br> СЕКРЕТ
+                        </p>
                     </div>
                     <div class="catalog__item col-4 col-md-3 col-xl-2">
                         <img src="./img/door26.svg" alt="catalog-img-26" class="catalog__img">
-                        <p class="catalog__desc"></p>
+                        <p class="catalog__desc">
+                            ШАЛЕ <br> СЕКРЕТ
+                        </p>
                     </div>
                     <div class="catalog__item col-4 col-md-3 col-xl-2">
                         <img src="./img/door27.svg" alt="catalog-img-27" class="catalog__img">
-                        <p class="catalog__desc"></p>
+                        <p class="catalog__desc">
+                            ШАЛЕ <br> СЕКРЕТ
+                        </p>
                     </div>
                     <div class="catalog__item col-4 col-md-3 col-xl-2">
                         <img src="./img/door28.svg" alt="catalog-img-28" class="catalog__img">
-                        <p class="catalog__desc"></p>
+                        <p class="catalog__desc">
+                            ШАЛЕ
+                        </p>
                     </div>
                     <div class="catalog__item col-4 col-md-3 col-xl-2">
                         <img src="./img/door29.svg" alt="catalog-img-29" class="catalog__img">
-                        <p class="catalog__desc"></p>
+                        <p class="catalog__desc">
+                            ШАЛЕ
+                        </p>
                     </div>
                     <div class="catalog__item col-4 col-md-3 col-xl-2">
                         <img src="./img/door30.svg" alt="catalog-img-30" class="catalog__img">
-                        <p class="catalog__desc"></p>
+                        <p class="catalog__desc">
+                            ШАЛЕ
+                        </p>
                     </div>
                 </div>
 
+                <div class="text-center">
+                    <a href="#test" class="btn-link long">Хочу больше дверей</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="furniture" id="furniture">
+            <div class="container">
+                <h3 class="furniture__title">
+                    Фурнитура
+                </h3>
+
+                <div class="furniture__hands row">
+                    <div class="furniture__hand col-3 col-md-2"><img src="./img/hand1.svg" alt="img"></div>
+                    <div class="furniture__hand col-3 col-md-2"><img src="./img/hand2.svg" alt="img"></div>
+                    <div class="furniture__hand col-3 col-md-2"><img src="./img/hand3.svg" alt="img"></div>
+                    <div class="furniture__hand col-3 col-md-2"><img src="./img/hand4.svg" alt="img"></div>
+                    <div class="furniture__hand col-3 col-md-2"><img src="./img/hand5.svg" alt="img"></div>
+                    <div class="furniture__hand col-3 col-md-2"><img src="./img/hand6.svg" alt="img"></div>
+                    <div class="furniture__hand col-3 col-md-2"><img src="./img/hand7.svg" alt="img"></div>
+                    <div class="furniture__hand col-3 col-md-2"><img src="./img/hand8.svg" alt="img"></div>
+                    <div class="furniture__hand col-3 col-md-2"><img src="./img/hand9.svg" alt="img"></div>
+                    <div class="furniture__hand col-3 col-md-2"><img src="./img/hand10.svg" alt="img"></div>
+                    <div class="furniture__hand col-3 col-md-2"><img src="./img/hand11.svg" alt="img"></div>
+                    <div class="furniture__hand col-3 col-md-2"><img src="./img/hand12.svg" alt="img"></div>
+                    <div class="furniture__hand col-3 col-md-2"><img src="./img/hand13.svg" alt="img"></div>
+                    <div class="furniture__hand col-3 col-md-2"><img src="./img/hand14.svg" alt="img"></div>
+                    <div class="furniture__hand col-3 col-md-2"><img src="./img/hand15.svg" alt="img"></div>
+                    <div class="furniture__hand col-3 col-md-2"><img src="./img/hand16.svg" alt="img"></div>
+                    <div class="furniture__hand col-3 col-md-2"><img src="./img/hand17.svg" alt="img"></div>
+                    <div class="furniture__hand col-3 col-md-2"><img src="./img/hand18.svg" alt="img"></div>
+                    <div class="furniture__hand col-3 col-md-2"><img src="./img/hand19.svg" alt="img"></div>
+                    <div class="furniture__hand col-3 col-md-2"><img src="./img/hand20.svg" alt="img"></div>
+                    <div class="furniture__hand col-3 col-md-2"><img src="./img/hand21.svg" alt="img"></div>
+                    <div class="furniture__hand col-3 col-md-2"><img src="./img/hand22.svg" alt="img"></div>
+                    <div class="furniture__hand col-3 col-md-2"><img src="./img/hand23.svg" alt="img"></div>
+                    <div class="furniture__hand col-3 col-md-2"><img src="./img/hand24.svg" alt="img"></div>
+                    <div class="furniture__hand col-3 col-md-2"><img src="./img/hand25.svg" alt="img"></div>
+                    <div class="furniture__hand col-3 col-md-2"><img src="./img/hand26.svg" alt="img"></div>
+                    <div class="furniture__hand col-3 col-md-2"><img src="./img/hand27.svg" alt="img"></div>
+                    <div class="furniture__hand col-3 col-md-2"><img src="./img/hand28.svg" alt="img"></div>
+                    <div class="furniture__hand col-3 col-md-2"><img src="./img/hand29.svg" alt="img"></div>
+                    <div class="furniture__hand col-3 col-md-2"><img src="./img/hand30.svg" alt="img"></div>
+                    <div class="furniture__hand col-3 col-md-2"><img src="./img/hand31.svg" alt="img"></div>
+                    <div class="furniture__hand col-3 col-md-2"><img src="./img/hand32.svg" alt="img"></div>
+                    <div class="furniture__hand col-3 col-md-2"><img src="./img/hand33.svg" alt="img"></div>
+                    <div class="furniture__hand col-3 col-md-2"><img src="./img/hand34.svg" alt="img"></div>
+                    <div class="furniture__hand col-3 col-md-2"><img src="./img/hand35.svg" alt="img"></div>
+                    <div class="furniture__hand desk col-3 col-md-2"><img src="./img/hand36.svg" alt="img"></div>
+                    <div class="furniture__hand desk col-3 col-md-2"><img src="./img/hand37.svg" alt="img"></div>
+                    <div class="furniture__hand mob col-3 col-md-2"><img src="./img/hand38.svg" alt="img"></div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a href="#test" class="btn-link long mob">
+                    Больше фурнитуры
+                </a>
+            </div>
+        </div>
+
+        <div class="advantages" id="advantages">
+            <div class="container">
+                <h3 class="advantages__title">
+                    Приобретите двери в рассрочку <br> до 12 месяцев
+                </h3>
+                <div class="advantages__holder row flex-md-column">
+                    <div class="advantages__item col-9 col-sm-8 col-md-7 col-lg-6 col-xl-5">
+                        <img src="./img/advantage1.svg" alt="image">
+                        <div class="advantages__desc">
+                            <p class="title">
+                                Без первоначального взноса
+                            </p>
+                            <p class="text">
+                                Первый платеж только через месяц
+                            </p>
+                        </div>
+                    </div>
+                    <div class="advantages__item col-9 col-sm-8 col-md-7 col-lg-6 col-xl-5">
+                        <img src="./img/advantage2.svg" alt="image">
+                        <div class="advantages__desc">
+                            <p class="title">
+                                Без процентов и переплат
+                            </p>
+                        </div>
+                    </div>
+                    <div class="advantages__item col-9 col-sm-8 col-md-7 col-lg-6 col-xl-5">
+                        <img src="./img/advantage3.svg" alt="image">
+                        <div class="advantages__desc">
+                            <p class="title">
+                                Оформление за 5 минут
+                            </p>
+                        </div>
+                    </div>
+                    <div class="advantages__item col-9 col-sm-8 col-md-7 col-lg-6 col-xl-5">
+                        <img src="./img/advantage4.svg" alt="image">
+                        <div class="advantages__desc">
+                            <p class="title">
+                                Погашение частями
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <a href="#test" class="btn-link long">
+                        Оформить сейчас
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="form" id="test">
+            <div class="container">
+                <h3 class="form__title">
+                    Остались вопросы?
+                </h3>
+                <h4 class="form__subtitle">
+                    Заполните форму и мы Вам перезвоним в течение 5 минут
+                </h4>
+                <form method="post" id="emailForm" class="form__holder text-center">
+                    <div class="form__group">
+                        <input class="form__input" type="text" id="fname" name="fname" placeholder="Имя" required>
+                        <div class="form__line"></div>
+                    </div>
+                    <div class="form__group">
+                        <input class="form__input" type="tel" id="pNumber" name="fphone" placeholder="Номeр телефона"
+                            oninput="this.value = this.value.replace(/[^0-9.]/g, '-').replace(/(\..*)\./g, '$1');"
+                            required>
+                        <div class="form__line"></div>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="checkbox" required>
+                        <label class="form-check-label" for="checkbox">
+                            Я согласен(-а) на сбор и обработку персональных данных
+                        </label>
+                    </div>
+                    <button class="form__submit btn-link long" type="submit">Перезвоните мне</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer" id="contacts">
+            <div class="container">
+                <div class="footer__socials">
+                    <a href="https://instagram.com/new_door_almaty"><img src="./img/instagram.svg" alt="img">@new_door_almaty</a>
+                    <a href="mailto:info@new_door.com"><img src="./img/gmail.svg" alt="img">info@new_door.com</a>
+                    <a href="#"><img src="./img/phone.svg" alt="img">+7 (708) 902 63-58</a>
+                </div>
+                <p class="footer__desc">Copyright 2022© NEW DOOR ALMATY. All rights reserved</p>
             </div>
         </div>
     </div>

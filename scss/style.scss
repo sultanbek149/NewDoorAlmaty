@@ -26,9 +26,6 @@ $content-size: clamp(0.875rem, 0.7045rem + 0.7273vw, 1.2rem);
 .btn-link {
   display: inline-block;
 
-  font-size: clamp(0.8125rem, 0.5568rem + 1.0909vw, 1.375rem);
-  font-size: clamp(0.875rem, 0.6477rem + 0.9697vw, 1.375rem);
-  font-size: clamp(0.9375rem, 0.7386rem + 0.8485vw, 1.375rem);
   font-size: clamp(1rem, 0.8295rem + 0.7273vw, 1.375rem);
 
   background-color: #ffe6a7;
@@ -38,7 +35,7 @@ $content-size: clamp(0.875rem, 0.7045rem + 0.7273vw, 1.2rem);
       #ffb800 100%
     )
     /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-  padding: 1rem 4rem;
+  padding: 0.5rem 4rem;
   border-radius: 14.5791px;
   text-decoration: none;
   color: #000000;
@@ -53,23 +50,54 @@ $content-size: clamp(0.875rem, 0.7045rem + 0.7273vw, 1.2rem);
 }
 
 .btn-link.long {
-  padding: 1rem 1.5rem;
+  padding: 0.5rem 1rem;
+  background-image: unset;
+  background-color: #ffe6a7;
+}
+
+.wrapper {
+  padding-block: 0 9rem;
+}
+
+.header,
+.about,
+.compose,
+.catalog,
+.furniture,
+.advantages,
+.form {
+  margin-bottom: 10rem;
+}
+
+.nav-mobile {
+  a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    font-size: 1.3rem;
+    transition: all 100ms ease-in-out;
+  }
+
+  a + a {
+    margin-top: 0.7rem;
+  }
+
+  a.active {
+    color: #ffe6a7;
+  }
+
+  a:not(.active):hover {
+    color: #0dcaf0;
+  }
 }
 
 .header {
-  padding-top: 35px;
-
-  margin-bottom: 6rem;
-
-  .container {
-    height: auto;
-  }
+  padding-top: 2.5rem;
 
   &__banner {
     display: flex;
     flex-direction: column-reverse;
-
-    row-gap: 3rem;
+    row-gap: 3.5rem;
   }
   &__banner-desc {
     text-align: center;
@@ -79,7 +107,7 @@ $content-size: clamp(0.875rem, 0.7045rem + 0.7273vw, 1.2rem);
   &__banner-img {
     text-align: center;
     img {
-      width: min(100%, 350px);
+      width: min(95%, 350px);
     }
   }
   &__banner-subtitle {
@@ -123,8 +151,6 @@ $content-size: clamp(0.875rem, 0.7045rem + 0.7273vw, 1.2rem);
 }
 
 .about {
-  margin-bottom: 6rem;
-
   &__title {
     font-weight: 600;
     line-height: 47px;
@@ -133,7 +159,7 @@ $content-size: clamp(0.875rem, 0.7045rem + 0.7273vw, 1.2rem);
   }
 
   &__holder {
-    padding-block: 2.5rem 3.5rem;
+    padding-block: 2rem 3rem;
     display: flex;
     flex-direction: column;
     row-gap: 1.7rem;
@@ -162,8 +188,6 @@ $content-size: clamp(0.875rem, 0.7045rem + 0.7273vw, 1.2rem);
 }
 
 .compose {
-  margin-bottom: 6rem;
-
   &__title {
     font-weight: 600;
     text-align: center;
@@ -182,6 +206,9 @@ $content-size: clamp(0.875rem, 0.7045rem + 0.7273vw, 1.2rem);
 
 .catalog {
   &__title {
+    text-align: center;
+    font-size: clamp(1.5625rem, 0.9091rem + 2.7879vw, 3rem);
+    margin-bottom: 4rem;
   }
   &__item {
     text-align: center;
@@ -190,8 +217,172 @@ $content-size: clamp(0.875rem, 0.7045rem + 0.7273vw, 1.2rem);
     width: min(100%, 140px);
   }
 
+  &__desc {
+    font-size: clamp(0.5rem, 0.2727rem + 0.9697vw, 1rem);
+  }
+
   .row {
-    row-gap: 5rem;
+    row-gap: 4rem;
+    margin-bottom: 4rem;
+  }
+}
+
+.furniture {
+  &__title {
+    font-weight: 600;
+    margin-bottom: 4rem;
+    text-align: center;
+    font-size: clamp(1.5625rem, 0.9091rem + 2.7879vw, 3rem);
+  }
+
+  &__hands {
+    justify-content: center;
+    row-gap: 1.5rem;
+    margin-bottom: 4rem;
+  }
+
+  &__hand {
+    text-align: center;
+    img {
+      width: min(100%, 140px);
+    }
+  }
+
+  &__hand.desk {
+    display: none;
+  }
+}
+
+.advantages {
+  &__title {
+    font-size: clamp(1.0625rem, 0.5227rem + 2.303vw, 2.25rem);
+
+    font-weight: 600;
+    text-align: center;
+
+    margin-bottom: 2rem;
+  }
+  &__holder {
+    margin-bottom: 3rem;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    // height: 75px;
+
+    & + & {
+      margin-top: 1.5rem;
+    }
+
+    border: 1.45791px solid #000000;
+    border-radius: 6px;
+
+    padding-inline: 0.5rem;
+    padding-block: 0.5rem;
+
+    img {
+      width: 30px;
+      margin-right: 1rem;
+    }
+  }
+  .text {
+    font-size: clamp(0.7rem, 0.1875rem + 1.3333vw, 1.1rem);
+    font-size: clamp(0.5rem, 0.3036rem + 0.9821vw, 1.1075rem);
+  }
+  .title {
+    font-weight: 600;
+    font-size: clamp(0.625rem, 0.3571rem + 1.3393vw, 1.3rem);
+  }
+}
+
+.form {
+  &__title {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    font-size: clamp(1.1875rem, 0.8839rem + 1.5179vw, 2.25rem);
+  }
+
+  &__subtitle {
+    font-size: clamp(0.8125rem, 0.5982rem + 1.0714vw, 1.2625rem);
+    line-height: 21px;
+    margin-bottom: 2rem;
+  }
+  margin-bottom: 10rem;
+
+  &__group {
+    width: min(85vw, 482px);
+    margin-inline: auto;
+    margin-bottom: 19px;
+
+    & + & {
+      margin-top: 1.5rem;
+    }
+
+    position: relative;
+  }
+
+  &__input {
+    width: 100%;
+    border-radius: 7.60107px;
+    border: 0.728953px solid #000000;
+    padding-inline: 1rem;
+    padding-block: 1rem;
+
+    font-size: clamp(0.75rem, 0.5714rem + 0.8929vw, 1.375rem);
+  }
+
+  &__line {
+    border-top: 0.728953px solid rgba(0, 0, 0, 0.5);
+    width: 93%;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    translate: -50%;
+  }
+
+  .form-check {
+    width: min(85vw, 482px);
+    margin: auto;
+    text-align: left;
+
+    input {
+      border-radius: 1.25rem;
+    }
+
+    margin-bottom: 30px;
+  }
+
+  &__submit {
+    border: none;
+  }
+}
+
+.footer {
+  &__socials {
+    margin-bottom: 1rem;
+    a {
+      display: flex;
+      align-items: center;
+    }
+
+    a + a {
+      margin-top: 1rem;
+    }
+
+    img {
+      margin-right: 0.8rem;
+    }
+  }
+  &__desc {
+    font-size: clamp(0.825rem, 0.5536rem + 0.3571vw, 0.875rem);
+    line-height: 24px;
+    /* or 180% */
+
+    display: flex;
+    align-items: center;
+
+    color: #808080;
   }
 }
 
@@ -208,10 +399,10 @@ $content-size: clamp(0.875rem, 0.7045rem + 0.7273vw, 1.2rem);
       margin-inline: 0;
     }
   }
-}
 
-.catalog {
-  &__title {
+  .header .header__mobile-link {
+    font-size: $content-size;
+    display: none;
   }
 }
 
@@ -219,6 +410,21 @@ $content-size: clamp(0.875rem, 0.7045rem + 0.7273vw, 1.2rem);
   .header {
     &__nav {
       margin-inline: 4.5vw;
+    }
+  }
+
+  .advantages {
+    &__item {
+      padding-inline: 1.5rem;
+      // height: 80px;
+    }
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .form {
+    &__input {
+      padding-inline: 0.5rem;
     }
   }
 }
@@ -245,6 +451,14 @@ $content-size: clamp(0.875rem, 0.7045rem + 0.7273vw, 1.2rem);
 @media screen and (min-width: 768px) {
   .pulse {
     display: none;
+  }
+
+  .btn-link {
+    padding-inline: 3rem !important;
+    &.long {
+      padding-inline: 2.5rem !important;
+      padding-block: 0.7rem !important;
+    }
   }
 
   .header {
@@ -335,9 +549,92 @@ $content-size: clamp(0.875rem, 0.7045rem + 0.7273vw, 1.2rem);
       }
     }
   }
+
+  .furniture {
+    .furniture__hands {
+      column-gap: 1.5rem;
+      row-gap: 3rem;
+    }
+
+    &__hand.desk {
+      display: block;
+    }
+
+    &__hand.mob {
+      display: none;
+    }
+
+    .btn-link.mob {
+      display: none;
+    }
+  }
+  .advantages {
+    &__item {
+      // width: 450px;
+    }
+  }
+
+  .form {
+    &__input {
+      border-radius: 14.5791px;
+    }
+
+    &__title,
+    &__subtitle {
+      text-align: center;
+    }
+
+    &__title {
+      margin-bottom: 1rem;
+    }
+
+    &__subtitle {
+      margin-bottom: 2.5rem;
+    }
+
+    .form__group + .form__group {
+      margin-top: 2rem;
+      margin-bottom: 2.5rem;
+    }
+  }
 }
+
+@media screen and (min-width: 1200px) {
+  .col-xl-5 {
+    width: 43.6%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .col-xl-5 {
+    width: 36.6%;
+  }
+}
+
+@media screen and (min-width: 910px) {
+  .advantages {
+    &__item {
+      // height: 100px;
+      // width: 500px;
+      padding-block: 1rem;
+    }
+  }
+}
+
 @media screen and (min-width: 992px) {
-  // .compose, .catalog
+  // .compose, .catalog .furniture
+
+  .advantages {
+    &__item {
+      // height: 100px;
+
+      padding-block: 1rem;
+      img {
+        width: 40px;
+        margin-right: 1.5rem;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -378,6 +675,12 @@ $content-size: clamp(0.875rem, 0.7045rem + 0.7273vw, 1.2rem);
 
     p.text {
       font-size: $--fs-xl;
+    }
+  }
+
+  .advantages {
+    &__item {
+      // width: 500px;
     }
   }
 }
