@@ -49,6 +49,12 @@ $content-size: clamp(0.875rem, 0.7045rem + 0.7273vw, 1.2rem);
   }
 }
 
+.navbar {
+  .container-fluid {
+    padding-left: unset;
+  }
+}
+
 .btn-link.long {
   padding: 0.5rem 1rem;
   background-image: unset;
@@ -476,7 +482,7 @@ $content-size: clamp(0.875rem, 0.7045rem + 0.7273vw, 1.2rem);
       }
     }
 
-    height: 100vh;
+    height: min(100vh, 900px);
 
     .container {
       height: 100%;
