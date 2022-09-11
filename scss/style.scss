@@ -23,6 +23,39 @@ $content-size: clamp(0.875rem, 0.7045rem + 0.7273vw, 1.2rem);
   display: flex;
 }
 
+.alert-message {
+  position: fixed;
+  top: -5%;
+  left: 50%;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  -webkit-animation: showOut 4s ease-out;
+  animation: showOut 4s ease-out;
+  z-index: 1003;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+@keyframes showOut {
+  0% {
+    opacity: 0;
+  }
+  20%,90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+
+  20%,
+  100% {
+    -webkit-transform: translate(-50%, 115%);
+    transform: translate(-50%, 115%);
+  }
+}
+
 .btn-link {
   display: inline-block;
 
@@ -98,8 +131,6 @@ $content-size: clamp(0.875rem, 0.7045rem + 0.7273vw, 1.2rem);
     color: #0dcaf0;
   }
 }
-
-
 
 .header {
   padding-top: 2.5rem;
