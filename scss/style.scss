@@ -51,7 +51,7 @@ $content-size: clamp(0.875rem, 0.7045rem + 0.7273vw, 1.2rem);
 
 .navbar {
   .container-fluid {
-    padding-left: unset;
+    padding-right: unset;
   }
 }
 
@@ -90,12 +90,16 @@ $content-size: clamp(0.875rem, 0.7045rem + 0.7273vw, 1.2rem);
 
   a.active {
     color: #ffe6a7;
+    pointer-events: none;
+    text-decoration: none;
   }
 
   a:not(.active):hover {
     color: #0dcaf0;
   }
 }
+
+
 
 .header {
   padding-top: 2.5rem;
@@ -148,6 +152,7 @@ $content-size: clamp(0.875rem, 0.7045rem + 0.7273vw, 1.2rem);
       transition: all 100ms ease-in-out;
     }
     a.active {
+      pointer-events: none;
       font-weight: 600;
     }
     a:hover {
@@ -224,7 +229,7 @@ $content-size: clamp(0.875rem, 0.7045rem + 0.7273vw, 1.2rem);
   }
 
   &__desc {
-    font-size: clamp(0.5rem, 0.2727rem + 0.9697vw, 1rem);
+    font-size: clamp(0.65rem, 0.2727rem + 0.9697vw, 1rem);
   }
 
   .row {
@@ -456,6 +461,10 @@ $content-size: clamp(0.875rem, 0.7045rem + 0.7273vw, 1.2rem);
 
 @media screen and (min-width: 768px) {
   .pulse {
+    display: none;
+  }
+
+  .navbar.mobile {
     display: none;
   }
 
