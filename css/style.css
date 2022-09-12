@@ -272,7 +272,6 @@ a {
 .header__banner {
   display: flex;
   flex-direction: column-reverse;
-  row-gap: 3.5rem;
 }
 .header__banner-desc {
   text-align: center;
@@ -281,6 +280,7 @@ a {
 }
 .header__banner-img {
   text-align: center;
+  margin-bottom: 3.5rem;
 }
 .header__banner-img img {
   width: min(95%, 350px);
@@ -599,6 +599,7 @@ a {
   .header__banner-img {
     flex-basis: 50%;
     text-align: end;
+    margin-bottom: 0;
   }
   .header__banner-img img {
     width: min(36vw, 500px);

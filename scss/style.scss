@@ -138,7 +138,7 @@ $content-size: clamp(0.875rem, 0.7045rem + 0.7273vw, 1.2rem);
   &__banner {
     display: flex;
     flex-direction: column-reverse;
-    row-gap: 3.5rem;
+    // row-gap: 3.5rem;
   }
   &__banner-desc {
     text-align: center;
@@ -150,6 +150,7 @@ $content-size: clamp(0.875rem, 0.7045rem + 0.7273vw, 1.2rem);
     img {
       width: min(95%, 350px);
     }
+    margin-bottom: 3.5rem;
   }
   &__banner-subtitle {
     font-weight: 400;
@@ -556,6 +557,7 @@ $content-size: clamp(0.875rem, 0.7045rem + 0.7273vw, 1.2rem);
         bottom: 0;
         right: 0;
       }
+      margin-bottom: 0;
     }
 
     &__nav-links {
