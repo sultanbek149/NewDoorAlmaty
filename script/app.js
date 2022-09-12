@@ -30,9 +30,9 @@ function sendMail(e) {
 
     Email.send({
         SecureToken:
-            "74c06a47-6f01-4dd8-a8e3-8d5c5d81847f",
+            "c243d354-c7f2-4ab2-a92c-f41b28af8a67",
         To: 'allaniyazovsultan1@gmail.com',
-        From: 'sultanhahahamaratov@gmail.com',
+        From: 'tashikova.aida1@gmail.com',
         Subject: "NewDoorAlmaty",
         Body: `Имя:             ${fullName}.<br>
                Номер телефона:  ${pNumber}.`
@@ -42,6 +42,7 @@ function sendMail(e) {
     // sultanhahahamaratov@gmail.com
     // password 80AC4DD439A67D3C6CDC2F9DB585070706C3
 
+    
     // abcdDCBA1234#
     clearFields()
 }
