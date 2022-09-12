@@ -681,6 +681,16 @@ $content-size: clamp(0.875rem, 0.7045rem + 0.7273vw, 1.2rem);
       }
     }
   }
+
+  .header {
+    &__banner-img img{
+      right: 3%;
+    }
+
+    &__banner-desc {
+      margin-left: 2rem;
+    }
+  }
 }
 
 @media screen and (min-width: 1200px) {

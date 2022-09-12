@@ -692,6 +692,12 @@ a {
     width: 40px;
     margin-right: 1.5rem;
   }
+  .header__banner-img img {
+    right: 3%;
+  }
+  .header__banner-desc {
+    margin-left: 2rem;
+  }
 }
 @media screen and (min-width: 1200px) {
   .header__nav {
