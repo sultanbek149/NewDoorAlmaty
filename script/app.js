@@ -31,7 +31,7 @@ function sendMail(e) {
     Email.send({
         SecureToken:
             "c243d354-c7f2-4ab2-a92c-f41b28af8a67",
-        To: 'allaniyazovsultan1@gmail.com',
+        To: 'info@new_door.com',
         From: 'tashikova.aida1@gmail.com',
         Subject: "NewDoorAlmaty",
         Body: `Имя:             ${fullName}.<br>
