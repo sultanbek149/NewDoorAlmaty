@@ -30,20 +30,15 @@ function sendMail(e) {
 
     Email.send({
         SecureToken: "c243d354-c7f2-4ab2-a92c-f41b28af8a67",
-        To: 'info@new_door.com',
+        To: 'tashikovaaida3@gmail.com',
         From: 'tashikova.aida1@gmail.com',
         Subject: "NewDoorAlmaty",
         Body: `Имя:             ${fullName}.<br>
                Номер телефона:  ${pNumber}.`
     }).then(() => showAlert("Ваше сообщение успешно отправлено!", true))
-    .catch((e) => showAlert(`Простите, сообщение не отправлено! ${e.message}`, false));
+        .catch((e) => showAlert(`Простите, сообщение не отправлено! ${e.message}`, false));
 
-// sultanhahahamaratov@gmail.com
-// password 80AC4DD439A67D3C6CDC2F9DB585070706C3
-
-
-// abcdDCBA1234#
-clearFields()
+    clearFields()
 }
 
 function showAlert(message, isSuccess) {
