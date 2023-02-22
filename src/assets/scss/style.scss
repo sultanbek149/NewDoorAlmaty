@@ -3,8 +3,6 @@
 @use "./reset" as *;
 @use "./pulse" as *;
 
-
-
 $--fs-xs: 0.75rem;
 $--fs-s: 0.875rem;
 $--fs-base: 1rem;
@@ -46,7 +44,8 @@ $content-size: clamp(0.875rem, 0.7045rem + 0.7273vw, 1.2rem);
   0% {
     opacity: 0;
   }
-  20%,90% {
+  20%,
+  90% {
     opacity: 1;
   }
   100% {
@@ -689,7 +688,7 @@ $content-size: clamp(0.875rem, 0.7045rem + 0.7273vw, 1.2rem);
   }
 
   .header {
-    &__banner-img img{
+    &__banner-img img {
       right: 3%;
     }
 
@@ -729,7 +728,6 @@ $content-size: clamp(0.875rem, 0.7045rem + 0.7273vw, 1.2rem);
     &__item {
       margin-inline: 0;
       flex-basis: 45%;
-      
     }
 
     p.title {
@@ -740,7 +738,6 @@ $content-size: clamp(0.875rem, 0.7045rem + 0.7273vw, 1.2rem);
       font-size: $--fs-xl;
 
       mix-blend-mode: darken;
-
     }
   }
 }
